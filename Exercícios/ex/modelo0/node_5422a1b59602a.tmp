@@ -1,0 +1,24 @@
+function fatorial(n){
+    if(n==1){
+        return 1
+    }else{
+        return n+fatorial(n-1)
+    }
+}
+//console.log(fatorial(110))
+var c=110
+var x=1
+while(x!=0){
+    c=c+(c-x)
+    x++
+}
+console.log(c)
+
+function fatorial(n){
+    var fat=1
+    for(n;n>1;n--){
+        fat=fat*n
+    }
+    return fat
+}
+//console.log(fatorial(5))

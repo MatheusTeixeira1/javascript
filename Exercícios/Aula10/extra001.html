@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+        p {
             margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
 
     <p>peso:</p><input type="number" name="txtn1" id="txtn1">
@@ -18,37 +20,38 @@
     <input type="button" value="calcular" onclick="calcul()">
     <div id="res">O seu IMC é...</div>
 
-        <script>
-            function calcul(){
-                var d1=window.document.getElementById('txtn1')
-                var d2=window.document.getElementById('txtn2')
-                var res=window.document.getElementById('res')
-                var n1=Number(d1.value)
-                var n2=Number(d2.value)
-                var imc=n1/n2**2
-                imc=imc.toFixed(2)
-                if(imc<18.5){
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta abaixo do peso.` 
-                }else if(imc<24.9 && imc>0){
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta em um peso normal.` 
-                }else if(imc<29.9){
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta com sobrepeso.` 
-                }else if(imc<34.9){
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta com obesidade grau 1.` 
-                }else if(imc<39.9){
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta com obesidade grau 2.` 
-                }else{
-                    res.innerText= `O seu IMC é ${imc}, Voçe esta com obesidade grau 3.` 
-                }
-                
-                
-            }
-            function getImcMessage(imc){
-                if(imc <18.5){
-                return 'Ta magro em corno!'
+    <script>
+        function calcul() {
+            var d1 = window.document.getElementById('txtn1')
+            var d2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(d1.value)
+            var n2 = Number(d2.value)
+            var imc = n1 / n2 ** 2
+            imc = imc.toFixed(2)
+            res.innerText = getImcMessage(imc)
+
+        }
+        function getImcMessage(imc) {
+            if (imc < 18.5) {
+                return `O seu IMC é ${imc}, Voçe esta abaixo do peso.`
+            } else if (imc < 24.9 && imc > 0) {
+                return `O seu IMC é ${imc}, Voçe esta em um peso normal.`
+            } else if (imc < 29.9) {
+                return `O seu IMC é ${imc}, Voçe esta com sobrepeso.`
+            } else if (imc < 34.9) {
+                return `O seu IMC é ${imc}, Voçe esta com obesidade grau 1.`
+            } else if (imc < 39.9) {
+                return `O seu IMC é ${imc}, Voçe esta com obesidade grau 2.`
+            } else {
+                return `O seu IMC é ${imc}, Voçe esta com obesidade grau 3.`
             }
 
-}
-        </script>
+
+        }
+
+
+    </script>
 </body>
+
 </html>

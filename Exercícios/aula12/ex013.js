@@ -1,5 +1,11 @@
 var d=new Date()
 var dia=d.getDay()
+var nascd='2000'
+var nasc=Number(nascd)
+var a=new Date()
+var ano=a.getFullYear()
+var idade=ano-nasc
+console.log(idade)
 
 switch(dia){
     case 0:
