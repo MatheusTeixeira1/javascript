@@ -1,0 +1,14 @@
+//requisita acesso aos FileSistem
+var input=require('fs').readFileSync('stdin', 'utf8')
+var lines=input.split(' ')
+
+var [n1,n2]=lines.map(item=>Number(item))
+
+res=0
+if(n1<n2){
+    res=n2-n1
+}else{
+    n1=24-n1
+    res=n1+n2
+}
+console.log(`O JOGO DUROU ${res} HORA(S)`)

@@ -1,0 +1,41 @@
+// function trocaVogais(parametro){
+//     var novastring=''
+//     for(i=1;i<parametro.length;i++){
+//         var caracte=parametro[i]
+//         if(parametro[i]==='a'||parametro[i]==='e'||parametro[i]==='i'||parametro[i]==='o'||parametro[i]==='u'){
+//             novastring=novastring+1
+//         }else{
+//             novastring=novastring+caracte
+//         }
+//     }
+//     return novastring
+// }   
+// console.log(trocaVogais('matheus'))
+
+
+// function trocaVogais(parametro) {
+//     return parametro.replaceAll(/[aeiou]/g, 1)
+// }
+// console.log(trocaVogais('aeiou'))
+
+// function tiraNumeros(parametro) {
+//     var res=''
+//     for (i = 0; i < parametro.length; i++) {
+        
+//         if(parametro[i]!=='1'&& parametro[i]!=='2'&& parametro[i]!=='3'&& parametro[i]!=='4'&& parametro[i]!=='5'&& parametro[i]!=='6'&& parametro[i]!=='7'&& parametro[i]!=='8'&& parametro[i]!=='9'){
+//             res+=parametro[i]
+//         }
+//     }
+//     return res
+//   }
+//   console.log(tiraNumeros('ma1the54us'))
+
+function somaAteMeta(inicio, meta) {
+    let numeros=[]
+    let soma=0
+    for(i=inicio;soma<meta;i){
+        i=i+1
+        numeros.push[i]
+    }
+}
+somaAteMeta(2,12)

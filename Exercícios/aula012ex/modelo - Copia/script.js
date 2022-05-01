@@ -1,3 +1,4 @@
+
 function carregar(){
     var horad= new Date()
     var hora=horad.getHours()
